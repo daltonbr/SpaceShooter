@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
         {
             nextFire = Time.time + fireRate;   //reset the nextFire
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation);  //instantiate the the Bolt
+            GetComponent<AudioSource>().Play ();
         }
     }
 
